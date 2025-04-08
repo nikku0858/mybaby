@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Only for You Baby ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="backgroundMusic" loop>
+    <source src="Asset Audio 3.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <button id="playMusic" onclick="playMusic()">Play Music 🎵</button>
+
+  <!-- Heartfall Animation -->
+  <div class="hearts"></div>
+
+  <!-- Main Card -->
+  <div class="card">
+    <img src="pic.jpg" alt="jpg" class="love-gif" />
+    <h1>For My Princess 👑 Baby ❤️</h1>
+    <p class="msg">
+      Aap meri duniya ho, Baby 🥰<br>
+      aapke bina sab suna suna lagta hai...<br>
+      Ek baat kehni thi dil se 💌
+    </p>
+
+    <button onclick="showMore()">Click Karo Na 😳</button>
+
+    <p id="more" class="hidden surprise-msg">
+      Main chahta hoon hum aur kareeb ho jaayein...<br>
+      emotionally, romantically aur physically... bas aap Haan kehde 💞
+    </p>
+
+    <!-- Proposal Section -->
+    <div class="proposal-section hidden" id="proposal">
+      <h2>Will You Be Mine Forever are you ready to be connect physically? 💍</h2>
+      <div class="btn-group">
+        <button class="yes-btn" onclick="showLove()">Yes 😍</button>
+        <button class="no-btn" id="noBtn" onmouseover="moveNoButton()">No 🙈</button>
+      </div>
+      <p class="love-reply hidden" id="loveReply">Yayyy! I Love You So Much Baby ❤️</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function playMusic() {
+      const music = document.getElementById('backgroundMusic');
+      music.play();
+      document.getElementById('playMusic').style.display = 'none'; // Hide the button after playing
+    }
+  </script>
+</body>
+</html>
